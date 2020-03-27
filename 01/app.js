@@ -24,7 +24,7 @@ console.log(image, image1);
 
 var data=null;
 var data1='';
-var date2;
+var data2;
 
 console.log(data,data1,data2);
 
