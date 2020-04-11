@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>source</title>
+
+    <style>
+      #board{
+        width: 400px;
+        height: 400px;
+      }
+      .white, .black{
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+      }
+
+    </style>
+</head>
+<body>
+
+<div id="board">
+</div>
+<script> 
+const board = document.getElementById("board");
+board.style.border="4px solid gray";
+
+var color={};
+var flag=0;
+
+var variables=new Array();
+var count=0;
+for(var i=0; i<4; i++){
+  for(var j=0; j<4; j++){
+      if((i+j)%2==0){
+        variables.push(document.createElement('span'));
+        variables[count].setAttribute("class","black");
+        variables[count].setAttribute("id",count);
+        variables[count].style.backgroundColor="black";
+        color[count]="black"
+        document.querySelector('#board').appendChild(variables[count]);
+        variables[count].addEventListener('click',function(){
+            variables[flag].style.backgroundColor=color[flag];
+            this.style.backgroundColor="red";
+            flag=this.id;
+            console.log(flag);
+        });
+        count++;
+      }
+      else{
+        variables.push(document.createElement('span'));
+        variables[count].setAttribute("class","white");
+        variables[count].setAttribute("id",count);
+        variables[count].style.backgroundColor="white";
+        color[count]="white"
+        document.querySelector('#board').appendChild(variables[count]);
+        variables[count].addEventListener('click',function(){
+            variables[flag].style.backgroundColor=color[flag];
+            this.style.backgroundColor="red";
+            flag=this.id;
+            console.log(flag);
+        });
+        count++;
+      }
+  }
+}
+
+console.log(color)
+</script>
+</body>
+</html>
