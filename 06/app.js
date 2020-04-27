@@ -24,9 +24,9 @@
 // console.log(newArr);
 // document.getElementById('box').addEventListener('click',event=>console.log(1));
 
-document
-.getElementsById('box')
-.addEventListener('click',(event)=>console.log(1));
+// document
+// .getElementsById('box')
+// .addEventListener('click',(event)=>console.log(1));
 
 function sum(x,y,z){
     return x+y+z;

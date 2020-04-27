@@ -10,7 +10,8 @@ function move_onoff(e,chk){
 function move(e){
     if(on==0){
         return;
-    }    var box=document.getElementById("box");
+    }    
+    var box=document.getElementById("box");
     var x=e.clientX-mx;
     var y=e.clientY-my;
     if(x>0){
