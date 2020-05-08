@@ -1,20 +1,20 @@
 console.log('app');
 
-//create
-var todos=['운동'];
-var todo='게임';
+// create
+let todos = ['운동'];
+let todo = '게임';
 todos.push(todo);
 console.log(todos);
 
 //Read
-todos.forEach(function(todos){
-    console.log(todo);
+todos.forEach(function (todos) {
+  console.log(todo);
 });
 
 //Update
-var todos = ['운동', '게임'];
-var updateTodo = '게임';
-var updateIndex = todos.findIndex(function(todo) {
+let todos = ['운동', '게임'];
+let updateTodo = '게임';
+let updateIndex = todos.findIndex(function (todo) {
   return todo === updateTodo;
 });
 todos[updateIndex] = '공부';
@@ -43,10 +43,9 @@ console.log(todos);
 //     console.log(a);
 // })();
 
-function sum(x,y){
-    if(!y) y=1;
-    console.log(x+y);
+function sum(x, y) {
+  if (!y) y = 1;
+  console.log(x + y);
 }
 console.log(sum(3));
-console.log(sum(3,3));
-
+console.log(sum(3, 3));

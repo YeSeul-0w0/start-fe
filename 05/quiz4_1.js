@@ -23,7 +23,6 @@
 //     $box.style.top=event.clientY+offset.y;
 // });
 
-
 const $box = document.getElementById('box');
 
 let offset = { x: 0, y: 0 };

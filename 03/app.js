@@ -1,9 +1,9 @@
-var link=document.querySelector('#link');
-link.addEventListener('click',function(){
-    console.log(1111);
-    // event.stopPropagation();
-    event.preventDefault();
-})
+const link = document.querySelector('#link');
+link.addEventListener('click', function () {
+  console.log(1111);
+  // event.stopPropagation();
+  event.preventDefault();
+});
 // var list=document.querySelector('#list');
 // console.log(list.children);
 
@@ -32,8 +32,6 @@ link.addEventListener('click',function(){
 //     console.log(arguments, event ,event.type,event.currentTarget);
 // }
 
-
-
 // console.log(window.outerWidth);
 // console.log(window.name);
 // window.open("http://www.daum.net");
@@ -48,16 +46,15 @@ link.addEventListener('click',function(){
 // var box2=document.querySelectorAll(".box");
 // console.log(box2);
 
-var div = document.createElement('div');
+const div = document.createElement('div');
 // console.log(div);
 // div.style.border='1px solid #000';
 // div.innerHTML='Hello';
 
 // document.body.appendChild(div);
 
-
-var debug=document.getElementById('debug');
+const debug = document.getElementById('debug');
 // debug.remove();
 
-// const list = document.getElementById('list'); 
+// const list = document.getElementById('list');
 // list.removeChild(list.children[0]);

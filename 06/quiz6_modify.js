@@ -1,18 +1,20 @@
-const $num = document.getElementById("num");
-const $btn = document.getElementById("btn");
-const $result = document.getElementById("result");
+const $num = document.getElementById('num');
+const $btn = document.getElementById('btn');
+const $result = document.getElementById('result');
 
-function print(event) {
+function print() {
   const result = [];
   const num = parseInt($num.value, 10);
-  if (isNaN(num)) {
-    alert("숫자를 입력하세요");
+  if (Number.isNaN(num)) {
+    // eslint-disable-next-line no-alert
+    alert('숫자를 입력하세요');
     return;
   }
+  // eslint-disable-next-line no-plusplus
   for (let i = 1; i <= 9; i++) {
     result.push(`${num} X ${i} = ${num * i}`);
   }
-  $result.innerHTML = result.join("<br>");
+  $result.innerHTML = result.join('<br>');
 }
 
-$btn.addEventListener("click", print);
+$btn.addEventListener('click', print);
