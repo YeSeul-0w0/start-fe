@@ -11,6 +11,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    React: true,
+    ReactDOM: true,
   },
   rules: {
     'no-unused-vars': 'warn',
